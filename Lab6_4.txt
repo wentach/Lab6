@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Геометричні фігури</title>
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.shape {
+			width: 200px;
+			height: 200px;
+			margin: 10px;
+			text-align: center;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			cursor: pointer;
+		}
+
+		#circle {
+			background-image: url("circle.png");
+		}
+
+		#rectangle {
+			background-image: url("rectangle.png");
+		}
+
+		#polygon {
+			background-image: url("triangle.png");
+		}
+
+		.info {
+			display: none;
+			margin-top: 10px;
+			padding: 10px;
+			border: 1px solid black;
+		}
+
+		.shape:hover + .info {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="circle" class="shape"></div>
+		<div id="rectangle" class="shape"></div>
+		<div id="polygon" class="shape"></div>
+	</div>
+
+	<div id="circle-info" class="info">
+		<h2>Коло</h2>
+		<p>Коло - це геометрична фігура, яка складається з усіх точок в площині, що знаходяться на відстані не більше заданої від заданої точки.</p>
+	</div>
+
+	<div id="rectangle-info" class="info">
+		<h2>Прямокутник</h2>
+		<p>Прямокутник - це геометрична фігура, яка має чотири прямі кути та протилежні сторони паралельні.</p>
+	</div>
+
+	<div id="polygon-info" class="info">
+		<h2>Многокутник</h2>
+		<p>Многокутник - це геометрична фігура, яка має більше двох сторін та кутів.</p>
+	</div>
+</body>
+</html>
